@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.agea.altoque.R;
 import com.agea.altoque.holder.ViewHolderOnlyDescription;
+import com.agea.altoque.holder.ViewHolderWeather;
 import com.agea.altoque.holder.ViewHolderWithGalleryAndDescription;
 import com.agea.altoque.holder.ViewHolderWithImageAndDescription;
 
@@ -29,16 +30,18 @@ public class ViewHolderFactory {
         View v = null;
 
         switch (InformationTypeEnum.getEnum(viewType)) {
-            case STORY_GALLERY_AND_DESCRIPTION:
+            case STORY_GALLERY_AND_DESCRIPTION:{
                 v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_full_story_with_gallery, parent, false);
-                vh = new ViewHolderWithGalleryAndDescription(v,FRAGMENT_MANAGER); break;
+                vh = new ViewHolderWithGalleryAndDescription(v,FRAGMENT_MANAGER); break;}
             case STORY_IMAGE_AND_DESCRIPTION: {
                 v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_full_story_with_image, parent, false);
-                vh = new ViewHolderWithImageAndDescription(v); break;
-            }
-            case STORE_ONLY_TEXT:
+                vh = new ViewHolderWithImageAndDescription(v); break;}
+            case STORE_ONLY_TEXT: {
                 v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_full_story, parent, false);
-                vh = new ViewHolderOnlyDescription(v); break;
+                vh = new ViewHolderOnlyDescription(v); break;}
+            case WEATHER_CARD: {
+                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_full_weather, parent, false);
+                vh = new ViewHolderWeather(v);break;}
         }
         return vh;
     }
@@ -62,6 +65,11 @@ public class ViewHolderFactory {
             {
                 ViewHolderOnlyDescription viewHolder =  (ViewHolderOnlyDescription) holder;
                 viewHolder.populate((Story) information); break;
+            }
+            case WEATHER_CARD:
+            {
+                ViewHolderWeather viewHolder =  (ViewHolderWeather) holder;
+                viewHolder.populate((Weather) information); break;
             }
         }
     }

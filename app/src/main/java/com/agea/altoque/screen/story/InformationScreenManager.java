@@ -46,7 +46,22 @@ public class InformationScreenManager {
        
 
     public void updateStories(List<Information> informations){
-        adapter.setInformations(informations);
+
+        //TODO validar repetidos.
+        List<Information> listOldInformations = adapter.getInformations();
+
+        if (listOldInformations != null)
+        {
+            for (Information info : informations)
+            {
+                listOldInformations.add(info);
+            }
+        }
+        else
+        {
+            adapter.setInformations(informations);
+        }
+
         adapter.notifyDataSetChanged();
     }
 
@@ -105,6 +120,11 @@ public class InformationScreenManager {
         //SHARED PREFERENCES AND SETTINGS FRAGMENT
         prefs = PreferenceManager.getDefaultSharedPreferences(activity.getBaseContext());
         mSettingsFragment = (SettingsFragment) activity.getSupportFragmentManager().findFragmentById(R.id.settings_fragment);
+    }
+
+    public InformationAdapter getAdapter()
+    {
+        return adapter;
     }
 
 }

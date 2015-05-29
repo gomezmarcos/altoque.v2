@@ -1,152 +1,44 @@
 package com.agea.altoque.model;
 
 
+import com.agea.altoque.R;
+import com.agea.altoque.helpers.AvailableImageValues;
+
+import org.joda.time.DateTime;
+
 public class Weather extends Information
 {
 	public static final String AJUSTE_CLIMA = "clima";
 	public static final String AJUSTE_MODE = "clima_mode";
 	public static final String AJUSTE_CITY = "clima_city";
-	private String name;
-	private String conditions;
-	private String visibility;
-	private String temp;
-	private String humidity;
-	private String wind;
-	private String icon;
-	private String feels;
-	private String pressure;
-	private Forecast forecast;
+
+	private static int[] values0 = { 0, 8 };
+	private static AvailableImageValues icons0 = new AvailableImageValues(values0);
+	private static int[] values1 = { 1, 9, 16 };
+	private static AvailableImageValues icons1 = new AvailableImageValues(values1);
+	private static int[] values2 = { 2, 12, 15 };
+	private static AvailableImageValues icons2 = new AvailableImageValues(values2);
+	private static int[] values3 = { 3, 6, 11, 13, 17 };
+	private static AvailableImageValues icons3 = new AvailableImageValues(values3);
+	private static int[] values4 = { 4, 14 };
+	private static AvailableImageValues icons4 = new AvailableImageValues(values4);
+	private static int[] values5 = { 5, 7 };
+	private static AvailableImageValues icons5 = new AvailableImageValues(values5);
+	private static int[] values6 = { 10 };
+	private static AvailableImageValues icons6 = new AvailableImageValues(values6);
+
+	private ItemWeather item;
 	private String generatedDate;
-	private int id;
-	private String fecha;
-	private String fechaAlmacen;
+	private String status;
 
-	public Weather()
+
+
+	@Override
+	public void defineViewType()
 	{
-		defineViewType();
+		InformationTypeEnum result = InformationTypeEnum.WEATHER_CARD;
+		this.setViewType(result.getViewTypeId());
 	}
-
-	public Weather(int id, String fecha, String temp, String name,
-				   String icon, String conditions, String visibility, String humidity,
-				   String wind, String feels, String pressure, Forecast forecast,
-				   String generatedDate, String fechaAlmacen)
-	{
-		this.id = id;
-		this.fecha = fecha;
-		this.temp = temp;
-		this.name = name;
-		this.icon = icon;
-		this.conditions = conditions;
-		this.visibility = visibility;
-		this.humidity = humidity;
-		this.wind = wind;
-		this.feels = feels;
-		this.pressure = pressure;
-		this.forecast = forecast;
-		this.generatedDate = generatedDate;
-		this.fechaAlmacen = fechaAlmacen;
-
-		defineViewType();
-
-
-	}
-
-	public String getFechaAlmacen() {
-		return fechaAlmacen;
-	}
-
-	public void setFechaAlmacen(String fechaAlmacen) {
-		this.fechaAlmacen = fechaAlmacen;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getFecha() {
-		return fecha;
-	}
-
-	public void setFecha(String fecha) {
-		this.fecha = fecha;
-	}
-
-	public String getTemp() {
-		return temp;
-	}
-
-	public void setTemp(String temp) {
-		this.temp = temp;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getIcon() {
-		return icon;
-	}
-
-	public void setIcon(String icon) {
-		this.icon = icon;
-	}
-
-	public String getConditions() {
-		return conditions;
-	}
-
-	public void setConditions(String conditions) {
-		this.conditions = conditions;
-	}
-
-	public String getVisibility() {
-		return visibility;
-	}
-
-	public void setVisibility(String visibility) {
-		this.visibility = visibility;
-	}
-
-	public String getHumidity() {
-		return humidity;
-	}
-
-	public void setHumidity(String humidity) {
-		this.humidity = humidity;
-	}
-
-	public String getWind() {
-		return wind;
-	}
-
-	public void setWind(String wind) {
-		this.wind = wind;
-	}
-
-	public String getFeels() {
-		return feels;
-	}
-
-	public void setFeels(String feels) {
-		this.feels = feels;
-	}
-
-	public String getPressure() {
-		return pressure;
-	}
-
-	public void setPressure(String pressure) {
-		this.pressure = pressure;
-	}
-
 	public String getGeneratedDate() {
 		return generatedDate;
 	}
@@ -155,18 +47,59 @@ public class Weather extends Information
 		this.generatedDate = generatedDate;
 	}
 
-	@Override
-	public void defineViewType()
+	public ItemWeather getItem() {
+		return item;
+	}
+
+	public DateTime getDate()
 	{
-		InformationTypeEnum result = InformationTypeEnum.WEATHER_CARD;
-		this.setViewType(result.getViewTypeId());
+		DateTime date = new DateTime(Long.parseLong(generatedDate));
+		return date;
 	}
 
-	public Forecast getForecast() {
-		return forecast;
+	public static int getBackgroundDrawableIdFromIcon(String icon)
+	{
+
+		int icono = Integer.parseInt(icon);
+		int background;
+
+		if (icons0.containsIcon(icono))
+		{
+			background = R.mipmap.background0;
+		}
+		else if (icons1.containsIcon(icono))
+		{
+			background = R.mipmap.background1;
+		}
+		else if (icons2.containsIcon(icono))
+		{
+			background = R.mipmap.background2;
+
+		}
+		else if (icons3.containsIcon(icono))
+		{
+			background = R.mipmap.background3;
+		}
+		else if (icons4.containsIcon(icono))
+		{
+			background = R.mipmap.background4;
+		}
+		else if (icons5.containsIcon(icono))
+		{
+			background = R.mipmap.background5;
+		}
+		else if (icons6.containsIcon(icono))
+		{
+			background = R.mipmap.background6;
+		}
+		else
+		{
+			background=0;
+		}
+
+		return background;
 	}
 
-	public void setForecast(Forecast forecast) {
-		this.forecast = forecast;
-	}
+
+
 }

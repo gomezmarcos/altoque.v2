@@ -8,7 +8,7 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:id="@+id/clima"
+        android:id="@+id/background_weather"
         android:background="@color/grey_font_perfil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
                 android:paddingRight="15dp">
 
                 <TextView
-                    android:id="@+id/time"
+                    android:id="@+id/date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|right"
@@ -43,7 +43,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/text_news"
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

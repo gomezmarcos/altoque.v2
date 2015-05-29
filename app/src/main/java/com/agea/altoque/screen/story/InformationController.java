@@ -2,8 +2,11 @@ package com.agea.altoque.screen.story;
 
 import android.util.Log;
 
+import com.agea.altoque.helpers.GsonRequest;
 import com.agea.altoque.model.Information;
 import com.agea.altoque.model.Story;
+import com.agea.altoque.model.Weather;
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
 import com.android.volley.Response;
@@ -24,6 +27,7 @@ public class InformationController {
     private RequestQueue requestQueue;
 
     String URL_ALTOQUE = "http://api-editoriales.clarin.com/files/altoque/altoque.json";
+    String URL_WEATHER = "http://api-editoriales.clarin.com/api/clima/Buenos%20Aires";
 
     public InformationController(InformationScreenManager manager, RequestQueue request) {
         this.screenManager=manager;
@@ -33,7 +37,7 @@ public class InformationController {
 
     private void findInformation() {
         findStories();
-        //findWeather();
+        findWeather();
         //findHoroscopo();
         //findCosasLocas();
     }
@@ -49,6 +53,7 @@ public class InformationController {
                 }
                 List<Information> informations = parseResponseToStories(response);
                 screenManager.updateStories(informations);
+
             }
         }, new Response.ErrorListener() {
             @Override
@@ -91,5 +96,28 @@ public class InformationController {
             stories.add(story);
         }
         return stories;
+    }
+
+    private void findWeather()
+    {
+        requestQueue.add(new GsonRequest<Weather>(Request.Method.GET, URL_WEATHER, Weather.class, new Response.Listener<Weather>() {
+            @Override
+            public void onResponse(Weather weather)
+            {
+                Log.e("response: ", weather.getItem().toString());
+                weather.defineViewType();
+
+                List<Information> informations = screenManager.getAdapter().getInformations();
+                informations.add(0,weather);
+
+            }
+        }, new Response.ErrorListener()
+        {
+            @Override
+            public void onErrorResponse(VolleyError volleyError)
+            {
+                Log.e("ERROR PARSER WEATHER", volleyError.toString());
+            }
+        }));
     }
 }

@@ -14,7 +14,7 @@ import java.util.List;
  * Created by marcos on 26/05/15.
  */
 public class InformationAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
-    
+
     private List<Information> informations;
 
     private InformationAdapter(){}
@@ -48,5 +48,9 @@ public class InformationAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     public void setInformations(List<Information> informations) {
         this.informations = informations;
+    }
+
+    public List<Information> getInformations() {
+        return informations;
     }
 }
