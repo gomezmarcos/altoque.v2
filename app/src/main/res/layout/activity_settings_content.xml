@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.clarin.altoque.settings.contenido.SettingsContentActivity">
+
+    <include layout="@layout/toolbar_settings"/>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/content_settings"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/grey_font_perfil"
+        android:dividerHeight="1dp"
+        android:background="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="menu_01">Administrar contenido</string>
+    <string name="menu_02">Clima</string>
+    <string name="menu_03">Horóscopo</string>
+    <string name="menu_04">Resultado de partidos</string>
+    <string name="menu_05">Silenciar alertas</string>
+    <string name="menu_05_from">Desde</string>
+    <string name="menu_05_to">Hasta</string>
+    <string name="menu_06">Tamaño de texto</string>
+    <string name="version_info">Al Toque | versión 2.0.0</string>
+    <string name="weather_auto">Localización automática</string>
+    <string name="weather_manual">Ubicación manual</string>
+    <string name="weather_show">Hasta</string>
+    <string name="normal_text_size">Normal</string>
+    <string name="big_text_size">Grande</string>
+
+
+    <string name="content_0">Actualidad</string>
+    <string name="content_1">Deportes</string>
+    <string name="content_2">Espectáculos</string>
+    <string name="content_3">Tecnología</string>
+    <string name="content_4">Servicios</string>
+    <string name="ajustes_horoscopo">Ajustes | Horóscopo</string>
+    <string name="horoscopo_select">Seleccioná tu signo</string>
+    <string name="horoscopo_setting">Mostrar horóscopo</string>
+
+    <string name="app_name">Al Toque</string>
+    <string name="action_settings">Settings</string>
+    <string name="when_absent">Mientras no estuviste, \nesto pasó en Al Toque. \n</string>
+
+    <string name="title_activity_pop_up">PopUpActivity</string>
+    <string name="title_activity_settings_weather">SettingsWeather</string>
+    <string name="title_activity_configuration">ContentActivity</string>
+    <string name="title_activity_horoscopo">HoroscopoActivity</string>
+
+    <string name="app_id">344479319002359</string>
+    <!--viejo facebook id-->
+    <!--<string name="app_id">1538937273037603</string>-->
+    <string name="push_statusbar_text">Clarin Al Toque</string>
+
+
+
+</resources>

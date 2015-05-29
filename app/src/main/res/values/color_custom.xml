@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="com_facebook_blue_pressed">#0e3b9a</color>
+    <color name="com_facebook_blue_disabled">#838da3</color>
+    <color name="holo_dark_green">#99CC00</color>
+    <color name="main_grey">#2E2E2E</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="card_bkg_disabled">#EFEFED</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card_border">#D8D8D7</color>
+
+    <color name="red_alert">#EA1111</color>
+    <color name="alert_line1">#FFFFFF</color>
+    <color name="encuesta_line2">#000000</color>
+    <color name="mientras_ausente_line2">#FFFFFF</color>
+    <color name="alert_line2">#FFFFFF</color>
+    <color name="dark_button">#303030</color>
+    <color name="grey_font_perfil">#717277</color>
+    <color name="grey_line_strong">#717277</color>
+    <color name="grey_line">#E0E0E0</color>
+    <color name="grey_background">#FAFAFA</color>
+    <color name="grey_background_horoscopo">#A8A8A8</color>
+    <color name="grey_font_login">#707276</color>
+    <color name="color_fb">#3B5998</color>
+    <color name="color_g">#DD4B39</color>
+    <color name="color_tw">#55ACEE</color>
+    <color name="color_black">#000000</color>
+    <color name="blue_mientras_ausente">#0793EC</color>
+    <color name="link_url">#2196F3</color>
+    <color name="google_orange">#DD4B39</color>
+    <color name="google_orange_pressed">#B53D2D</color>
+    <!-- <color name="google_orange_disabled">#DF8478</color> -->
+    <color name="google_orange_disabled">#838da3</color>
+    <color name="fondo_actionbar">#000000</color>
+    <color name="text_time">#919191</color>
+
+
+</resources>

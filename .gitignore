@@ -1,0 +1,13 @@
+DateTimePicker Library/build/
+TitlePager/build/
+*.iml
+NineOldAndroids Library/build/
+NineOldAndroids Library/bin/
+NineOldAndroids Library/.settings/org.eclipse.jdt.core.prefs
+NineOldAndroids Library/.project
+NineOldAndroids Library/.classpath
+DateTimePicker Library/bin/
+.idea/
+local.properties
+.gradle/
+build/

@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.clarin.altoque.settings.contenido.SettingsContentActivity">
+
+    <include layout="@layout/toolbar_settings"/>
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@mipmap/menu_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/horoscopo_setting"
+                android:textColor="@color/color_black"
+                android:id="@+id/txt_clima"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/horoscopo_select"
+                android:textColor="@color/color_black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.SwitchCompat
+                android:theme="@style/SwitchTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="SI"
+                android:textOff="NO"
+                android:id="@+id/toggle_horoscopo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/aries"
+                android:background="@color/red_alert"
+                android:src="@mipmap/aries"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/tauro"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/tauro"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/geminis"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/geminis"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/cancer"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/cancer"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/leo"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/leo"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/virgo"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/virgo"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/libra"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/libra"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/escorpio"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/escorpio"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/sagitario"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/sagitario"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/capricornio"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/capricornio"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/acuario"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/acuario"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/piscis"
+                android:background="@color/grey_background_horoscopo"
+                android:src="@mipmap/piscis"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/chamu"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icono_signo_hoy_pressed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/txt_hoy"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icono_signo_amor_pressed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/txt_amor"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icono_signo_riqueza_pressed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/txt_riqueza"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icono_signo_bienestar_pressed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/txt_bienestar"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

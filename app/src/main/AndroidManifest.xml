@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agea.altoque" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Using push notifications requires a Google account -->
+
+    <permission android:name="com.agea.altoque.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.agea.clarin.clarin.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- REQUIRED PERMISSIONS -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- OPTIONAL PERMISSIONS -->
+    <!-- Needed for push notifications that contain VIBRATE flag. Optional, but recommended. -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".ApplicationContextProvider"
+        android:allowBackup="true"
+        android:icon="@mipmap/altoque_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!--MAIN ACTIVITY-->
+        <activity
+            android:name=".screen.story.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--END MAIN ACTIVITY-->
+
+        <!--INFOBIIIIIIIIIIP-->
+
+        <service android:name="com.infobip.push.lib.InfobipPushService"/>
+
+
+        <receiver android:name="com.infobip.push.lib.InfobipPushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.agea.clarin.clarin"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.infobip.push.lib.InternalReceiver" />
+
+        <!-- END INFOBIIIIIIIIIIP-->
+
+        <!-- REQUIRED RECEIVERS -->
+        <receiver
+            android:name=".push.MyPushReceiver"
+            android:permission="com.agea.altoque.permission.C2D_MESSAGE" >
+            <intent-filter>
+                <action android:name="com.infobip.push.intent.REGISTERED_FOR_NOTIFICATIONS" />
+                <action android:name="com.infobip.push.intent.REGISTRATION_REFRESHED" />
+                <action android:name="com.infobip.push.intent.UNREGISTERED_FROM_NOTIFICATIONS" />
+                <action android:name="com.infobip.push.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="com.infobip.push.intent.NOTIFICATION_OPENED" />
+                <action android:name="com.infobip.push.intent.ERROR" />
+
+                <category android:name="com.agea.altoque" />
+            </intent-filter>
+        </receiver>
+
+        <!-- REQUIRED SERVICES  -->
+        <service android:name=".push.CustomIntentServicePush"/>
+
+
+        <!--SETTING ACTIVITY -->
+        <activity
+            android:name=".settings.weather_screen.SettingsWeatherActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_settings_weather" >
+        </activity>
+        <activity
+            android:name=".settings.content_screen.SettingsContentActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_configuration" >
+        </activity>
+        <activity
+            android:name=".settings.zodiac_screen.SettingsZodiacActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_horoscopo" >
+        </activity>
+        <!--END SETTING ACTIVITY -->
+
+    </application>
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+</manifest>

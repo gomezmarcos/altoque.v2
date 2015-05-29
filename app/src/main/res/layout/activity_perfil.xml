@@ -1,0 +1,363 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/settings_horizontal_margin"
+    android:background="@color/grey_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:background="@color/red_alert"
+            android:padding="@dimen/settings_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ajustes"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/services" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/settings_horizontal_margin"
+            android:gravity="center"
+            android:id="@+id/config_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@mipmap/menu_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/settings_horizontal_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/menu_01"
+                android:textColor="@color/color_black"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/flecha"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_line">
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/clima_config"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/settings_horizontal_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@mipmap/menu_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/settings_horizontal_margin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_black"
+                    android:text="@string/menu_02" />
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/flecha"
+                     />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_line">
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/settings_horizontal_margin"
+            android:gravity="center"
+            android:id="@+id/zodiac_config"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@mipmap/menu_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/settings_horizontal_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_black"
+                android:text="@string/menu_03"/>
+            <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/flecha"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_line">
+        </FrameLayout>
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/settings_horizontal_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@mipmap/menu_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/settings_horizontal_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_black"
+                android:text="@string/menu_04"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_weight="1"
+                android:theme="@style/SwitchTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn=""
+                android:textOff=""
+                android:id="@+id/toggle_mam" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_line_strong">
+        </FrameLayout>
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/settings_horizontal_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@mipmap/menu_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/settings_horizontal_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_black"
+                android:text="@string/menu_05" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_weight="1"
+                    android:theme="@style/SwitchTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn=""
+                    android:textOff=""
+                    android:gravity="center_vertical"
+                    android:id="@+id/toggle_horario"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_horarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:padding="@dimen/settings_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_05_from" />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_black"
+                    android:id="@+id/text_hora_desde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/btn_desde"
+                    android:src="@mipmap/flecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="showTimePickerDialog" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="@dimen/settings_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_05_to" />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_black"
+                    android:id="@+id/text_hora_hasta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/btn_hasta"
+                    android:src="@mipmap/flecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="showTimePickerDialog" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_line">
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="@dimen/settings_horizontal_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/menu_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="@dimen/settings_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_black"
+                android:text="@string/menu_06"
+                android:id="@+id/txt_size" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:padding="@dimen/settings_horizontal_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggle_tamano_fuente">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:text="@string/normal_text_size"
+                android:theme="@style/RadioTheme"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/radio_normal"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/RadioTheme"
+                android:text="@string/big_text_size"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/radio_big"
+                android:checked="false" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_line_strong">
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/settings_horizontal_margin"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">>
+            <ImageView
+                android:src="@mipmap/menu_08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/settings_horizontal_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_black"
+                android:text="@string/version_info" />
+            </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

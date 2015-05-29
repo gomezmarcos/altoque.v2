@@ -1,0 +1,109 @@
+<resources >
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#FFFFFFFF</item>
+        <item name="strokeColor">#FFFFFFFF</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:background">#00000000</item>
+        <item name="radius">5dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="CardView.Custom">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary_material_dark</item>
+        <item name="colorPrimaryDark">@color/primary_material_dark</item>
+        <item name="colorAccent">@color/primary_material_dark</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:padding">6dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:linksClickable">true</item>
+        <item name="android:textColorLink">@color/link_url</item>
+    </style>
+
+    <style name="TextAppearance.TextTitleMam">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="TextAppearance.TextTime">
+        <item name="android:textColor">@color/text_time</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="TextAppearance.TextGoal">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">100sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextAppearance.Cards.MientrasAusente"></style>
+
+    <style name="TextAppearance.Cards.MientrasAusente.Line2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/mientras_ausente_line2</item>
+    </style>
+
+
+    <style name="TextAppearance.Cards">
+    </style>
+
+
+    <style name="TextAppearance.Cards.Brief">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <style name="SwitchTheme">
+        <item name="colorControlActivated">@color/red_alert</item>
+    </style>
+
+    <style name="RadioTheme">
+        <item name="colorControlActivated">@color/red_alert</item>
+    </style>
+
+    <style name="TextAppearance.Cards.Alerts">
+    </style>
+
+    <style name="TextAppearance.Cards.Alerts.Line1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/alert_line1</item>
+    </style>
+
+    <style name="TextAppearance.Cards.Alerts.Line2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/alert_line2</item>
+    </style>
+
+    <style name="TextAppearance.Cards.Alerts.Line3">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/alert_line2</item>
+    </style>
+
+</resources>

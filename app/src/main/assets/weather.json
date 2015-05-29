@@ -1,0 +1,624 @@
+{
+  "items": [
+    {
+      "name": "Aeroparque Buenos Aires",
+      "lat": -34.557979,
+      "lng": -58.416885
+    },
+    {
+      "name": "Azul",
+      "lat": -36.774402,
+      "lng": -59.853951
+    },
+    {
+      "name": "Bahia Blanca",
+      "lat": -38.7115,
+      "lng": -62.268158
+    },
+    {
+      "name": "Bariloche",
+      "lat": -41.132124,
+      "lng": -71.30893
+    },
+    {
+      "name": "Base Belgrano II",
+      "lat": -77.873802,
+      "lng": -34.626602
+    },
+    {
+      "name": "Base Carlini",
+      "lat": -62.233333,
+      "lng": -58.666667
+    },
+    {
+      "name": "Base Esperanza",
+      "lat": -64.234448,
+      "lng": -56.629136
+    },
+    {
+      "name": "Base Marambio",
+      "lat": -64.248846,
+      "lng": -56.64193
+    },
+    {
+      "name": "Base Orcadas",
+      "lat": -60.733333,
+      "lng": -44.733333
+    },
+    {
+      "name": "Base San Martin",
+      "lat": -68.133333,
+      "lng": -67.1
+    },
+    {
+      "name": "Benito Juarez",
+      "lat": -37.673019,
+      "lng": -59.805114
+    },
+    {
+      "name": "Bernardo De Irigoyen",
+      "lat": -26.248621,
+      "lng": -53.649944
+    },
+    {
+      "name": "Bolivar",
+      "lat": -36.208823,
+      "lng": -61.106172
+    },
+    {
+      "name": "Buenos Aires",
+      "lat": -34.591954,
+      "lng": -58.379395
+    },
+    {
+      "name": "Catamarca",
+      "lat": -28.462957,
+      "lng": -65.77829
+    },
+    {
+      "name": "Ceres",
+      "lat": -29.879648,
+      "lng": -61.948155
+    },
+    {
+      "name": "Chamical",
+      "lat": -30.361026,
+      "lng": -66.315071
+    },
+    {
+      "name": "Chapelco",
+      "lat": -40.166019,
+      "lng": -71.33342
+    },
+    {
+      "name": "Chepes",
+      "lat": -31.335641,
+      "lng": -66.591746
+    },
+    {
+      "name": "Chilecito",
+      "lat": -29.165241,
+      "lng": -67.499792
+    },
+    {
+      "name": "Cipolletti",
+      "lat": -38.933241,
+      "lng": -67.995125
+    },
+    {
+      "name": "Colonia (Uruguay)",
+      "lat": -34.458305,
+      "lng": -57.833946
+    },
+    {
+      "name": "Comodoro Rivadavia",
+      "lat": -45.847934,
+      "lng": -67.500215
+    },
+    {
+      "name": "Concordia",
+      "lat": -31.391158,
+      "lng": -58.016917
+    },
+    {
+      "name": "Cordoba",
+      "lat": -31.387054,
+      "lng": -64.180863
+    },
+    {
+      "name": "Cordoba Observatorio",
+      "lat": -31.417237,
+      "lng": -64.197605
+    },
+    {
+      "name": "Coronel Pringles",
+      "lat": -37.984122,
+      "lng": -61.353678
+    },
+    {
+      "name": "Coronel Suarez",
+      "lat": -37.455272,
+      "lng": -61.930453
+    },
+    {
+      "name": "Corrientes",
+      "lat": -27.463195,
+      "lng": -58.836701
+    },
+    {
+      "name": "Dolores",
+      "lat": -36.31222,
+      "lng": -57.67516
+    },
+    {
+      "name": "El Bolson",
+      "lat": -41.966383,
+      "lng": -71.515431
+    },
+    {
+      "name": "El Calafate",
+      "lat": -50.33823,
+      "lng": -72.270668
+    },
+    {
+      "name": "El Palomar",
+      "lat": -34.624309,
+      "lng": -58.593891
+    },
+    {
+      "name": "El Prado (Uruguay)",
+      "lat": -34.862694,
+      "lng": -56.202206
+    },
+    {
+      "name": "El Trebol",
+      "lat": -32.187817,
+      "lng": -61.697953
+    },
+    {
+      "name": "Esc. Aviacion Militar",
+      "lat": -31.441699,
+      "lng": -64.281204
+    },
+    {
+      "name": "Esquel",
+      "lat": -42.914824,
+      "lng": -71.321724
+    },
+    {
+      "name": "Ezeiza",
+      "lat": -34.843676,
+      "lng": -58.524277
+    },
+    {
+      "name": "Formosa",
+      "lat": -26.178548,
+      "lng": -58.174721
+    },
+    {
+      "name": "General Pico",
+      "lat": -35.654507,
+      "lng": -63.754891
+    },
+    {
+      "name": "Gobernador Gregores",
+      "lat": -48.750558,
+      "lng": -70.249979
+    },
+    {
+      "name": "Gualeguaychu",
+      "lat": -33.004345,
+      "lng": -58.510635
+    },
+    {
+      "name": "Iguazu",
+      "lat": -25.694519,
+      "lng": -54.436619
+    },
+    {
+      "name": "Ituzaingo",
+      "lat": -34.654533,
+      "lng": -58.674744
+    },
+    {
+      "name": "Jachal",
+      "lat": -30.240605,
+      "lng": -68.74674
+    },
+    {
+      "name": "Jujuy",
+      "lat": -24.180584,
+      "lng": -65.299355
+    },
+    {
+      "name": "Villa Reynolds",
+      "lat": -33.699779,
+      "lng": -65.380433
+    },
+    {
+      "name": "Villa Maria Del Rio Seco",
+      "lat": -29.901526,
+      "lng": -63.723156
+    },
+    {
+      "name": "Villa Gesell",
+      "lat": -37.259709,
+      "lng": -56.973236
+    },
+    {
+      "name": "Villa Dolores",
+      "lat": -31.943641,
+      "lng": -65.191891
+    },
+    {
+      "name": "Viedma",
+      "lat": -40.809652,
+      "lng": -62.996147
+    },
+    {
+      "name": "Victorica",
+      "lat": -36.214848,
+      "lng": -65.432438
+    },
+    {
+      "name": "Venado Tuerto",
+      "lat": -33.746752,
+      "lng": -61.964977
+    },
+    {
+      "name": "Uspallata",
+      "lat": -32.58902,
+      "lng": -69.345495
+    },
+    {
+      "name": "Ushuaia",
+      "lat": -54.797716,
+      "lng": -68.303429
+    },
+    {
+      "name": "Tucuman",
+      "lat": -26.801703,
+      "lng": -65.216957
+    },
+    {
+      "name": "Tres Arroyos",
+      "lat": -38.372751,
+      "lng": -60.278233
+    },
+    {
+      "name": "Trenque Lauquen",
+      "lat": -35.971546,
+      "lng": -62.732119
+    },
+    {
+      "name": "Trelew",
+      "lat": -43.245828,
+      "lng": -65.307224
+    },
+    {
+      "name": "Tinogasta",
+      "lat": -28.066338,
+      "lng": -67.565839
+    },
+    {
+      "name": "Tartagal",
+      "lat": -22.515332,
+      "lng": -63.803457
+    },
+    {
+      "name": "Tandil",
+      "lat": -37.314612,
+      "lng": -59.150417
+    },
+    {
+      "name": "Sunchales",
+      "lat": -30.942206,
+      "lng": -61.560008
+    },
+    {
+      "name": "Santiago del Estero",
+      "lat": -27.778645,
+      "lng": -64.267327
+    },
+    {
+      "name": "Santa Rosa del Conlara",
+      "lat": -32.34121,
+      "lng": -65.206954
+    },
+    {
+      "name": "Santa Rosa",
+      "lat": -36.617732,
+      "lng": -64.289101
+    },
+    {
+      "name": "Santa Fe",
+      "lat": -31.629852,
+      "lng": -60.700176
+    },
+    {
+      "name": "Santa Cruz",
+      "lat": -48.472921,
+      "lng": -69.2173
+    },
+    {
+      "name": "San Rafael",
+      "lat": -34.610041,
+      "lng": -68.340996
+    },
+    {
+      "name": "San Miguel",
+      "lat": -34.539793,
+      "lng": -58.711823
+    },
+    {
+      "name": "San Martin (Mza)",
+      "lat": -33.074282,
+      "lng": -68.469597
+    },
+    {
+      "name": "San Luis",
+      "lat": -33.295238,
+      "lng": -66.335503
+    },
+    {
+      "name": "San Julian",
+      "lat": -49.304531,
+      "lng": -67.707889
+    },
+    {
+      "name": "San Juan",
+      "lat": -31.514752,
+      "lng": -68.519089
+    },
+    {
+      "name": "San Fernando",
+      "lat": -34.442168,
+      "lng": -58.557842
+    },
+    {
+      "name": "San Carlos (Mza)",
+      "lat": -33.773083,
+      "lng": -69.041618
+    },
+    {
+      "name": "San Antonio Oeste",
+      "lat": -40.741404,
+      "lng": -64.967836
+    },
+    {
+      "name": "Salta",
+      "lat": -24.782059,
+      "lng": -65.410935
+    },
+    {
+      "name": "Rosario",
+      "lat": -32.949047,
+      "lng": -60.666558
+    },
+    {
+      "name": "Rocha (Uruguay)",
+      "lat": -34.482647,
+      "lng": -54.350937
+    },
+    {
+      "name": "Rio Gallegos",
+      "lat": -51.620148,
+      "lng": -69.216667
+    },
+    {
+      "name": "Rio Cuarto",
+      "lat": -33.130076,
+      "lng": -64.349037
+    },
+    {
+      "name": "Rio Colorado",
+      "lat": -38.997841,
+      "lng": -64.963017
+    },
+    {
+      "name": "Resistencia",
+      "lat": -27.450704,
+      "lng": -58.985993
+    },
+    {
+      "name": "Reconquista",
+      "lat": -29.144628,
+      "lng": -59.643452
+    },
+    {
+      "name": "Rafaela",
+      "lat": -31.250965,
+      "lng": -61.491535
+    },
+    {
+      "name": "Punta Indio B.A.",
+      "lat": -35.273653,
+      "lng": -57.260796
+    },
+    {
+      "name": "Puerto Madryn",
+      "lat": -42.752307,
+      "lng": -65.049759
+    },
+    {
+      "name": "Puerto Deseado",
+      "lat": -47.7485,
+      "lng": -65.888285
+    },
+    {
+      "name": "Posadas",
+      "lat": -27.375426,
+      "lng": -55.911012
+    },
+    {
+      "name": "Pilar Obs.",
+      "lat": -34.45788,
+      "lng": -58.908799
+    },
+    {
+      "name": "Pigue",
+      "lat": -37.603896,
+      "lng": -62.406685
+    },
+    {
+      "name": "Perito Moreno",
+      "lat": -46.590367,
+      "lng": -70.926889
+    },
+    {
+      "name": "Pehuajo",
+      "lat": -35.810644,
+      "lng": -61.895692
+    },
+    {
+      "name": "Pcia. Roque Saenz Pena",
+      "lat": -26.782549,
+      "lng": -60.450752
+    },
+    {
+      "name": "Paso De Los Libres",
+      "lat": -29.713364,
+      "lng": -57.085397
+    },
+    {
+      "name": "Paso De Indios",
+      "lat": -43.864238,
+      "lng": -69.043678
+    },
+    {
+      "name": "Parana",
+      "lat": -31.741015,
+      "lng": -60.511349
+    },
+    {
+      "name": "Oran",
+      "lat": -23.138781,
+      "lng": -64.318613
+    },
+    {
+      "name": "Olavarria",
+      "lat": -36.892252,
+      "lng": -60.315338
+    },
+    {
+      "name": "Obera",
+      "lat": -27.487258,
+      "lng": -55.11998
+    },
+    {
+      "name": "Nueve de Julio",
+      "lat": -35.456335,
+      "lng": -60.887802
+    },
+    {
+      "name": "Neuquen",
+      "lat": -38.948195,
+      "lng": -68.06379
+    },
+    {
+      "name": "Mount Pleasant Airport (Islas Malvinas)",
+      "lat": -51.820819,
+      "lng": -58.456391
+    },
+    {
+      "name": "Moron",
+      "lat": -34.655663,
+      "lng": -58.616551
+    },
+    {
+      "name": "Monte Caseros",
+      "lat": -30.249318,
+      "lng": -57.629392
+    },
+    {
+      "name": "Metan",
+      "lat": -25.493643,
+      "lng": -64.972042
+    },
+    {
+      "name": "Merlo",
+      "lat": -34.670064,
+      "lng": -58.728645
+    },
+    {
+      "name": "Mercedes",
+      "lat": -34.651003,
+      "lng": -59.428879
+    },
+    {
+      "name": "Mendoza Observatorio",
+      "lat": -32.890083,
+      "lng": -68.841707
+    },
+    {
+      "name": "Mendoza",
+      "lat": -32.884777,
+      "lng": -68.838379
+    },
+    {
+      "name": "Mariano Moreno",
+      "lat": -34.557926,
+      "lng": -58.789951
+    },
+    {
+      "name": "Marcos Juarez",
+      "lat": -32.693132,
+      "lng": -62.102894
+    },
+    {
+      "name": "Mar del Plata",
+      "lat": -37.982634,
+      "lng": -57.587006
+    },
+    {
+      "name": "Maquinchao",
+      "lat": -41.245805,
+      "lng": -68.700134
+    },
+    {
+      "name": "Malargue",
+      "lat": -35.472065,
+      "lng": -69.581015
+    },
+    {
+      "name": "Las Lomitas",
+      "lat": -24.704186,
+      "lng": -60.600378
+    },
+    {
+      "name": "Las Flores",
+      "lat": -36.013699,
+      "lng": -59.097374
+    },
+    {
+      "name": "Laboulaye",
+      "lat": -34.127721,
+      "lng": -63.391041
+    },
+    {
+      "name": "La Rioja",
+      "lat": -29.412535,
+      "lng": -66.857842
+    },
+    {
+      "name": "La Quiaca",
+      "lat": -22.104289,
+      "lng": -65.596582
+    },
+    {
+      "name": "La Plata",
+      "lat": -34.920141,
+      "lng": -57.954109
+    },
+    {
+      "name": "Junin",
+      "lat": -34.588421,
+      "lng": -60.948227
+    },
+    {
+      "name": "Jujuy Universidad Nacional",
+      "lat": -24.185438,
+      "lng": -65.309628
+    }
+  ]
+}
